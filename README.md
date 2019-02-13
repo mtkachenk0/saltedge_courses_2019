@@ -5,7 +5,7 @@
 2. `6893` - show what next number will be
 3. `0` - show the previous number
 4. `12` - cast it to float, then devide by `4.5` round it up
-5. `28` - call `modulo` by 6 multiply result by `4.7` and round it down
+5. `28` - call `modulo` by 6, then multiply result by `4.7` and round it down
 
 ## String
 1. `"Brand new bicycle\r\n"` - remove trailing special characters
