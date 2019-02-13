@@ -1,7 +1,7 @@
 **The homework**
 
 ## Float/Integer
-1. `-123` - find out if it's odd or even?
+1. `-123` - find out if it's odd?
 2. `6893` - show what next number will be
 3. `0` - show the previous number
 4. `12` - cast it to float, then devide by `4.5` round it up
