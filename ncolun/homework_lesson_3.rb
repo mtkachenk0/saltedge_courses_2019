@@ -29,7 +29,7 @@ puts "Brand new bicycle".end_with?("bicycle")
 puts "Brand new bicycle"[8]
 
 # 1.6
-puts "I thought I new, everything, before that night".split(",")
+puts "I thought I knew, everything, before that night".split(",")
 
 # 1.7
-puts "I thought I new everything before that night #{6893 + 2 + 2264884428}"
+puts "I thought I knew everything before that night #{6893 + 2 + 2264884428}"
