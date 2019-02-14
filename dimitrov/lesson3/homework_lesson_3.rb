@@ -21,10 +21,11 @@ a = a.split
 b = a.last
 a.delete(b)
 puts a = a.join(" ")
+
+puts "Brand new bycicle".gsub('bycicle', '')
 ## 3. `"Brand new bicycle"` - delete last word
 
 puts "Brand new bicycle".split.last
-puts "Brand new bycicle".gsub('bycicle', '')
 ##4 `"Brand new bicycle"` - check if the sctring's last word is `bicycle`
 
 
