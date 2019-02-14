@@ -5,7 +5,7 @@ puts (12.to_f / 4.5).round
 puts ((28 % 6) * 4.7).round
 puts "Brand new bicycle\r\n".strip
 puts "Brand new bicycle"[6..8]
-puts "Brand new bicycle"[0..8]
+puts "Brand new bicycle"[/(.*)\s/,1]
 puts "Brand new bicycle".include? "bicycle"
 puts "Brand new bicycle".index("w")
 puts "I thought I knew everything before that night".partition("everything")
