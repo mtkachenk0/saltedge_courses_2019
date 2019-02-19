@@ -18,12 +18,12 @@ end
 
 #one line version 
 
-arr.select {|x| x.even?}
+arr.select {|x| x.odd?}
 
 #multi line version
 
 arr.select do |x|
-	x.even?
+	x.odd?
 end
 
 # problem 4
