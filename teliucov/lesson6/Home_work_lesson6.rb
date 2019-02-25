@@ -54,3 +54,13 @@ puts rea[:title]
 # Task 3 
 # Read about other enumerable method
 # Tell in 2 sentences about 1 of them wich we didn't cover on this lesson
+
+# Enumerable#sum
+# sum(identity = 0, &block)
+# Вычисляет сумму элементов. напимер:
+# payments.sum { |p| p.price * p.tax_rate }
+# payments.sum(&:price)
+# Пример выше равнозначен payments.inject { |sum, p| sum + p.price } Также вычисляет суммы без использования блока:
+# [5, 15, 10].sum # => 30
+# Значение по умолчанию (сумма пустого списка) равна нулю. Но это можно переопределить:
+# [].sum(Payment.new(0)) { |i| i.amount } # => Payment.new(0)
