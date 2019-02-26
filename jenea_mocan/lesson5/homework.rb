@@ -5,6 +5,7 @@
 
 puts "Введите номер квартиры"
 ap_number = gets.chomp.to_i
+
 # enter appartment number
 if ap_number < 21
 puts "Подъезд №1"
@@ -67,4 +68,18 @@ puts "Добро пожаловать"
 else
 puts "Ошибка входа"
 end
+
+a = { ivan: "334455", alex: "777", petr: "password"}
+puts "Введите login"
+login = gets.chomp.to_s
+# enter login
+puts "Введите password"
+password = gets.chomp.to_s
+# enter password
+if a[login.to_sym] = password && [login.to_sym] = login
+puts "Добро пожаловать"
+else
+puts "Ошибка входа"
+end
+
 
