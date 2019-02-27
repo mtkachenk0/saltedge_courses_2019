@@ -17,6 +17,8 @@ end
 # 1.4.
 a.include?(16) || a.include?(26)
 
+a.select { |x| [16, 26].include? x }.any?
+
 # 2.
 songs = [
   {title: "Closer", artist: "Lemaitre", year: 2016},
@@ -31,6 +33,9 @@ songs.map do |h|
   h[:title]
 end
 
+songs.each { |h| puts h[:title] }
+
+
 # 2.2
 songs.each do |h|
   if h[:year] >= 1990 && h[:year] < 2000
@@ -38,10 +43,22 @@ songs.each do |h|
   end
 end
 
+songs.each { |h| puts h[:title] if h[:year]>= 1990 && h[:year] < 2000 }
+
 # 2.3.
 songs.select do |h|
   songs.count { |hash| hash[:artist] == h[:artist] } >= 2
 end.map {|song| song[:artist]}.uniq
+
+b = {}
+songs.each do |hash|
+  if b.keys.include? hash[:artist]
+    b[hash [:artist]] += 1
+  else
+    b [hash [:artist]] = 1
+  end
+end
+
 
 # 2.4.
 songs.sort_by { |song| song[:year] }.first
