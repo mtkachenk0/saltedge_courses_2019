@@ -10,3 +10,11 @@ def factorial(n)
 	n = gets.chomp
 	print (1..n).inject(:*)
 end
+
+
+def fact(x)
+	if x == 0
+		return 1
+	return x * fact(x - 1)
+x = int(raw_input())
+print fact(x)

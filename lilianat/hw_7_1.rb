@@ -22,3 +22,4 @@ def check_num(a, b)
     end
 
 
+# print ",".join(n)
