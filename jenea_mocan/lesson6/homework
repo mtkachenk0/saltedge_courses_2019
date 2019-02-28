@@ -21,7 +21,7 @@ end
 
 # 1.4. Find out if your array contains number 16 or 26.
 
-array.include?(16) or array.include?(26)
+array.include?(16) %% array.include?(26)
 
 # 2. Create an array of hashes
 # Each hash should contain the keys: title, artist, year
