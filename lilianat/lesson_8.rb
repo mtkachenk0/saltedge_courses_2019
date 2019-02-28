@@ -64,3 +64,7 @@ end
 
 # instances: attributes (@attr), methods (method), class (self class), self (self)
 # class: attributes (@@attr), methods (self method), constants (CONSTANT), parent (<), self (self)  
+# global: variables, constants
+# class: attributes
+# instance: attributes
+# local: arguments, variables
