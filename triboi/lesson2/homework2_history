@@ -1,0 +1,707 @@
+vitamin@triboi:~$ ls
+ Desktop     examples.desktop   max        Public   sp60912.tar   Загрузки
+ Documents   homework           Music      rrrr     Templates    'Рабочий стол'
+ Downloads   lesson2            Pictures   snap     Videos
+vitamin@triboi:~$ cd homework/
+vitamin@triboi:~/homework$ cd github/
+vitamin@triboi:~/homework/github$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+vitamin@triboi:~/homework/github$ git clone --help
+vitamin@triboi:~/homework/github$ git clone git@github.com:BuTaMuH1st/saltedge_courses_2019.git
+Cloning into 'saltedge_courses_2019'...
+The authenticity of host 'github.com (140.82.118.4)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': yy
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': yy
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': y
+Please type 'yes' or 'no': n
+Please type 'yes' or 'no': ^C
+vitamin@triboi:~/homework/github$ git clone https://github.com/BuTaMuH1st/saltedge_courses_2019.git
+Cloning into 'saltedge_courses_2019'...
+remote: Enumerating objects: 11, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 11 (delta 1), reused 5 (delta 0), pack-reused 0
+Unpacking objects: 100% (11/11), done.
+vitamin@triboi:~/homework/github$ ls
+saltedge_courses_2019
+vitamin@triboi:~/homework/github$ cd saltedge_courses_2019/
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ ls
+presentation  README.md
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git remote add main https://github.com/mtkachenk0/saltedge_courses_2019.git
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git remote
+main
+origin
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git remote -v
+main	https://github.com/mtkachenk0/saltedge_courses_2019.git (fetch)
+main	https://github.com/mtkachenk0/saltedge_courses_2019.git (push)
+origin	https://github.com/BuTaMuH1st/saltedge_courses_2019.git (fetch)
+origin	https://github.com/BuTaMuH1st/saltedge_courses_2019.git (push)
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git branch 
+* master
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ ls
+presentation  README.md
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ mkdir triboi
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ mkdir triboi\lesson2
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ cd triboi
+vitamin@triboi:~/homework/github/saltedge_courses_2019/triboi$ ls
+vitamin@triboi:~/homework/github/saltedge_courses_2019/triboi$ mkdir lesson2
+vitamin@triboi:~/homework/github/saltedge_courses_2019/triboi$ ls
+lesson2
+vitamin@triboi:~/homework/github/saltedge_courses_2019/triboi$ cd lesson2
+vitamin@triboi:~/homework/github/saltedge_courses_2019/triboi/lesson2$ touch index.html
+vitamin@triboi:~/homework/github/saltedge_courses_2019/triboi/lesson2$ ls
+index.html
+vitamin@triboi:~/homework/github/saltedge_courses_2019/triboi/lesson2$ cd ./
+vitamin@triboi:~/homework/github/saltedge_courses_2019/triboi/lesson2$ cd ..
+vitamin@triboi:~/homework/github/saltedge_courses_2019/triboi$ cd ..
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git add .
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git status 
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   triboi/lesson2/index.html
+
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git commit -m "changes from Triboi"
+[master 2716681] changes from Triboi
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 triboi/lesson2/index.html
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git status 
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git remote 
+main
+origin
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git remote -v
+main	https://github.com/mtkachenk0/saltedge_courses_2019.git (fetch)
+main	https://github.com/mtkachenk0/saltedge_courses_2019.git (push)
+origin	https://github.com/BuTaMuH1st/saltedge_courses_2019.git (fetch)
+origin	https://github.com/BuTaMuH1st/saltedge_courses_2019.git (push)
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git push origin main
+error: src refspec main does not match any.
+error: failed to push some refs to 'https://github.com/BuTaMuH1st/saltedge_courses_2019.git'
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git push main origin
+Username for 'https://github.com': BuTaMuH1st
+Password for 'https://BuTaMuH1st@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/mtkachenk0/saltedge_courses_2019.git/'
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git push main origin
+Username for 'https://github.com': ^?
+BuTaMuH1st
+Password for 'https://@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/mtkachenk0/saltedge_courses_2019.git/'
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ 
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ BuTaMuH1st
+BuTaMuH1st: command not found
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git push main origin
+Username for 'https://github.com': 
+BuTaMuH1st
+Password for 'https://github.com': 
+remote: Anonymous access to mtkachenk0/saltedge_courses_2019.git denied.
+fatal: Authentication failed for 'https://github.com/mtkachenk0/saltedge_courses_2019.git/'
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git push origin origin
+Username for 'https://github.com': BuTaMuH1st
+Password for 'https://BuTaMuH1st@github.com': 
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git push -u origin main
+error: src refspec main does not match any.
+error: failed to push some refs to 'https://github.com/BuTaMuH1st/saltedge_courses_2019.git'
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git remote
+main
+origin
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git remote -v
+main	https://github.com/mtkachenk0/saltedge_courses_2019.git (fetch)
+main	https://github.com/mtkachenk0/saltedge_courses_2019.git (push)
+origin	https://github.com/BuTaMuH1st/saltedge_courses_2019.git (fetch)
+origin	https://github.com/BuTaMuH1st/saltedge_courses_2019.git (push)
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git branch 
+* master
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ git push -u origin master
+Username for 'https://github.com': BuTaMuH1st
+Password for 'https://BuTaMuH1st@github.com': 
+Counting objects: 5, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 412 bytes | 412.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/BuTaMuH1st/saltedge_courses_2019.git
+   c8d622a..2716681  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ history
+    1  ruby -v
+    2  sudo apt update
+    3  ifconfig -a
+    4  rfkill list
+    5  ifconfig
+    6  apt -get update
+    7  ip a
+    8  lspci -knn | grep Net -A2
+    9  sudo apt-get update
+   10  sudo update-pciids
+   11  sudo
+   12  ls
+   13  cd Загрузки/
+   14  ls
+   15  tar tf sp60912.tar 
+   16  cd driver-network/
+   17  ks
+   18  ls
+   19  apropos rpm
+   20  sudu apt-get install rpm
+   21  sudo apt-get install rpm
+   22  ping md.archive.ubuntu.com
+   23  ls
+   24  ps -ef | grep dns
+   25  ls
+   26  ping -t 8.8.8.8
+   27  ping 8.8.8.8
+   28  ipconfig
+   29  ifconfig
+   30  ip a
+   31  sudo apt-get install rpm
+   32  man rpm
+   33  rpm -i compat-wireless-kmp-default-3.6_3.0.42_0.7-0.5.1.x86_64.rpm 
+   34  rpm -i compat-wireless-kmp-default-3.6_3.0.42_0.7-0.5.1.x86_64.rpm | more
+   35  rpm -i compat-wireless-kmp-default-3.6_3.0.42_0.7-0.5.1.x86_64.rpm 2>&1 | more
+   36  sudo apt-get install coreutils
+   37  ls
+   38  apropos rpm
+   39  man rpm
+   40  rpm -i --nodeps compat-wireless-kmp-default-3.6_3.0.42_0.7-0.5.1.x86_64.rpm 2>&1 | more
+   41  ls
+   42  rpm2cpio 
+   43  man rpm2cpio
+   44  rpm2cpio compat-wireless-kmp-default-3.6_3.0.42_0.7-0.5.1.x86_64.rpm 
+   45  ls -l
+   46  cat compat-wireless-kmp-default-3.6_3.0.42_0.7-0.5.1.x86_64.rpm | rpm2cpio 
+   47  man rpm2cpio
+   48  cat compat-wireless-kmp-default-3.6_3.0.42_0.7-0.5.1.x86_64.rpm | rpm2cpio  > compat-wireless-kmp-default-3.6_3.0.42_0.7-0.5.1.x86_64.cpio
+   49  file 8
+   50  file *
+   51  ls
+   52  cpio -t com*cpio
+   53  file *
+   54  ls -l
+   55  man cpio
+   56  cpio -t -v comp*cpio
+   57  ls -l
+   58  bg
+   59  ls -l
+   60  fg
+   61  ls
+   62  man cpio
+   63  cpio -i comp*cpio
+   64  ls
+   65  man cpio
+   66  cat compat-wireless-kmp-default-3.6_3.0.42_0.7-0.5.1.x86_64.cpio | cpio -i
+   67  ls
+   68  cat compat-wireless-kmp-default-3.6_3.0.42_0.7-0.5.1.x86_64.cpio | cpio -idmv
+   69  ls
+   70  cd Загрузки/
+   71  ды
+   72  ls
+   73  ls -l
+   74  tar xf sp59141.tar 
+   75  ls
+   76  cd SP59141/
+   77  ls
+   78  ls -l
+   79  for i in * ; do cat $i | rpm2cpio > $i.cpio; done
+   80  ls -l
+   81  sudo rpm -i --nodeps broadcom-wireless-5.100.82.115-5.1.x86_64.rpm 
+   82  ip a
+   83  for i in *.cpio; do cpio -idmv < $i; done
+   84  cd lib/modules/3.0.13-0.27-default/updates/
+   85  ls
+   86  file *
+   87  cd ../../..
+   88  ls
+   89  cd ..
+   90  ls
+   91  cat etc/modprobe.d/wl 
+   92  uname -a
+   93  man uname
+   94  apropos release
+   95  man os-release
+   96  cat /usr/lib/os-release 
+   97  cd ..
+   98  wget -N -t 5 -T 10 http://dl.dropbox.com/u/57264241/wireless_script
+   99  sudo apt-get install linux-headers-generic
+  100  sudo apt-get install --reinstall bcmwl-kernel-source
+  101  ping 8.8.8.8
+  102  ip a
+  103  exit
+  104  sudo apt -get install ruby
+  105  apt -get install ruby
+  106  apt -get -install ruby
+  107  apt get install ruby
+  108  apt -get install ruby
+  109  sudo apt-get install ruby-full
+  110  rvm use system
+  111  ruby -v
+  112  mkdir max
+  113  cd max
+  114  mkdir courses
+  115  touch courses/test
+  116  cd courses
+  117  echo test
+  118  echo "miru mir" >test
+  119  cat test
+  120  cp test ../
+  121  ..
+  122  cd ..
+  123  ls
+  124  rm test test_passed
+  125  rn test test_passed
+  126  cp test test_passed
+  127  rm /?
+  128  rm test
+  129  ls
+  130  cd courses
+  131  cp test ../
+  132  cd ..
+  133  ls
+  134  cp test past_passed
+  135  ls
+  136  rm past_passed
+  137  ls
+  138  mv test test_passed
+  139  ls
+  140  ls
+  141  ls /?
+  142  ls ?
+  143  Cd\
+  144  cd/
+  145  cd/bin
+  146  ls
+  147  cd /
+  148  cd /bin
+  149  cd /..
+  150  ls
+  151  pwd
+  152  cd /bin
+  153  pwd
+  154  pwd/
+  155  pnd
+  156  cd /..
+  157  bash
+  158  bash
+  159  cd /
+  160  cd /..
+  161  cd
+  162  mkdir vit
+  163  /ls
+  164  ls
+  165  cd /vit
+  166  mkdir triboi
+  167  ls
+  168  cd triboi/
+  169  ls
+  170  touch triboi
+  171  ls
+  172  mv triboi triboi2
+  173  gedit triboi
+  174  gedit triboi2
+  175  gedit triboi
+  176  gedit2
+  177  gedit triboi2
+  178  gedit triboi2@
+  179  gedit tribo &
+  180  gedit triboi2 &
+  181  gedit triboi2
+  182  pwd
+  183  ls
+  184  history
+  185  ~
+  186  cp triboi2 triboi
+  187  ls
+  188  mkdir 1
+  189  cd 1/
+  190  mkdir 2
+  191  cd 2/
+  192  mkdir 3
+  193  cd 3/
+  194  mkdir 4
+  195  cd 4/
+  196  mkdir 5
+  197  cd 5/
+  198  touch file1
+  199  ls
+  200  cd ..5
+  201  cd..5
+  202  cd..
+  203  cd ..
+  204  cd .. 4
+  205  cd .. 3
+  206  cd ../../..
+  207  cd root
+  208  cd .. root
+  209  cd root/
+  210  cd /
+  211  cd triboi
+  212  ls
+  213  history
+  214  ls
+  215  cd home
+  216  cd /
+  217  cd ..
+  218  cd ../
+  219  cd /home
+  220  cd home/
+  221  cd home/triboi
+  222  ls
+  223  cd vitamin
+  224  pwd
+  225  touch file
+  226  mkdir test2
+  227  ls
+  228  mv file test2
+  229  ls
+  230  cd test2
+  231  ls
+  232  touch file2
+  233  ls
+  234  cd
+  235  ls
+  236  triboi
+  237  cd triboi
+  238  ls
+  239  cd test2
+  240  ls
+  241  triboi2
+  242  cd triboi
+  243  ls
+  244  cd
+  245  ls
+  246  test2
+  247  cd test2
+  248  ls
+  249  clear
+  250  cd 
+  251  cd triboi
+  252  mkdir test2
+  253  touch file
+  254  mv file test2
+  255  cd test2
+  256  ls
+  257  touch best_file
+  258  ls
+  259  mv best_file ..
+  260  cd ..
+  261  ls
+  262  cd best_file
+  263  cd test2
+  264  mv best_file ../../
+  265  cd
+  266  cd triboi/
+  267  ls
+  268  mv best_file ../
+  269  cd/
+  270  cd
+  271  cp /home/triboi/best_file /home
+  272  cp home/triboi/best_file home
+  273  ls
+  274  del vit
+  275  delete vit
+  276  cd
+  277  ls
+  278  cd triboi
+  279  cut triboi
+  280  cat triboi
+  281  echo triboi Uraaaacat triboicat triboi!
+  282  cat triboi
+  283  echo triboi Uraaaacat triboicat tribotouch fil1 file2 file3
+  284  mkdir Ruby
+  285  cd Ruby
+  286  touch script.rb
+  287  puts script
+  288  cat script
+  289  ls
+  290  ruby script.rb
+  291  apt -get install ruby
+  292  sudo apt -get install ruby
+  293  cd
+  294  ip a
+  295  clear
+  296  cd triboi
+  297  ls
+  298  ls -lah
+  299  toucj file1
+  300  touch file1
+  301  chmod -lah file1
+  302  cd homework
+  303  touch lesson1
+  304  echo vitamin@vitamin-HP-ProBook-6475b:~$ mkdir max
+  305  vitamin@vitamin-HP-ProBook-6475b:~$ cd max
+  306  vitamin@vitamin-HP-ProBook-6475b:~/max$ mkdir courses
+  307  vitamin@vitamin-HP-ProBook-6475b:~/max$ cd courses
+  308  vitamin@vitamin-HP-ProBook-6475b:~/max/courses$ touch test
+  309  vitamin@vitamin-HP-ProBook-6475b:~/max/courses$ echo "Ruby! Ruby! Ruby!" > test
+  310  vitamin@vitamin-HP-ProBook-6475b:~/max/courses$ cat test
+  311  Ruby! Ruby! Ruby!
+  312  vitamin@vitamin-HP-ProBook-6475b:~/max/courses$ mv test test_passed
+  313  vitamin@vitamin-HP-ProBook-6475b:~/max/courses$ ls
+  314  test_passed
+  315  vitamin@vitamin-HP-ProBook-6475b:~/max/courses$ cd ../
+  316  vitamin@vitamin-HP-ProBook-6475b:~/max$ rm courses/test_passed
+  317  vitamin@vitamin-HP-ProBook-6475b:~/max$ rm -r courses
+  318  vitamin@vitamin-HP-ProBook-6475b:~/max$ ls
+  319  vitamin@vitamin-HP-ProBook-6475b:~/max$ 
+  320  echo "vitamin@vitamin-HP-ProBook-6475b:~$ mkdir max
+  321  vitamin@vitamin-HP-ProBook-6475b:~$ cd max
+  322  vitamin@vitamin-HP-ProBook-6475b:~/max$ mkdir courses
+  323  vitamin@vitamin-HP-ProBook-6475b:~/max$ cd courses
+  324  vitamin@vitamin-HP-ProBook-6475b:~/max/courses$ touch test
+  325  vitamin@vitamin-HP-ProBook-6475b:~/max/courses$ echo "Ruby! Ruby! Ruby!" > test
+  326  vitamin@vitamin-HP-ProBook-6475b:~/max/courses$ cat test
+  327  Ruby! Ruby! Ruby!
+  328  vitamin@vitamin-HP-ProBook-6475b:~/max/courses$ mv test test_passed
+  329  vitamin@vitamin-HP-ProBook-6475b:~/max/courses$ ls
+  330  test_passed
+  331  vitamin@vitamin-HP-ProBook-6475b:~/max/courses$ cd ../
+  332  vitamin@vitamin-HP-ProBook-6475b:~/max$ rm courses/test_passed
+  333  vitamin@vitamin-HP-ProBook-6475b:~/max$ rm -r courses
+  334  vitamin@vitamin-HP-ProBook-6475b:~/max$ ls
+  335  vitamin@vitamin-HP-ProBook-6475b:~/max$ 
+  336  " > lesson1
+  337  cat lesson1
+  338  gedit
+  339  ~
+  340  cd ~
+  341  sudo apt get install git
+  342  sudo apt install git
+  343  git --version
+  344  mkdir lesson2
+  345  cd lesson2/
+  346  git init
+  347  ls -lag
+  348  git status
+  349  touch firstfile
+  350  git status
+  351  git add firstfile
+  352  git status
+  353  git commit -m "my first commit"
+  354  git config --global user.email "vitamin1st1982@gmail.com"
+  355  git config --global user.name "BuTaMuH"
+  356  git commit -m "my first commit"
+  357  git status
+  358  echo "изменение1" >firstfile
+  359  git status
+  360  git diff
+  361  touch secondfile
+  362  git status
+  363  git add firstfile seconfile
+  364  git status
+  365  git commit
+  366  git commit -m "some commits"
+  367  git commit -m "some changes"
+  368  git log
+  369  touch myfile1
+  370  git add myfile1
+  371  git status
+  372  touch myfile2
+  373  touch myfile3
+  374  git add myfile2
+  375  git status
+  376  ls
+  377  echo "first change" > myfile1
+  378  git add myfile1
+  379  git commit -m "1 change" 
+  380  echo "second change" > myfile1
+  381  git commit -m "2 change"
+  382  git status
+  383  git diff
+  384  git checkout -b
+  385  git checkout_b
+  386  git status
+  387  rm myfile3
+  388  ls
+  389  rm myfile2
+  390  git status
+  391  git branch
+  392  git brange bug fix
+  393  git branch bug_fix
+  394  git status
+  395  git checkout line2
+  396  git checkout -b bug_fix
+  397  git status
+  398  ls
+  399  touch newfile
+  400  git status
+  401  git add -A
+  402  git status
+  403  git log
+  404  git diff master bug_fix
+  405  git diff bug_fix
+  406  mkdir github
+  407  cd github
+  408  git clone https://github.com/BuTaMuH1st/ruby_scrapper.git
+  409  git status
+  410  git init
+  411  git status
+  412  ls
+  413  cd ~
+  414  ls
+  415  cd homework/
+  416  ls
+  417  git clone https://github.com/mtkachenk0/saltedge_courses_2019.git
+  418  ls
+  419  cd saltedge_courses_2019/
+  420  git remote -v
+  421  git remote add main https://github.com/BuTaMuH1st/saltedge_courses_2019.git
+  422  git remote -v
+  423  git checkout -b newline1
+  424  git status
+  425  ls
+  426  git add README.md 
+  427  git status
+  428  cat readme.md
+  429  echo "Vsem PRivet. from BuTaMuH" README.md 
+  430  git status
+  431  git commit -m "change from BuTaMuH"
+  432  ls
+  433  git branch
+  434  ls
+  435  touch Myfile
+  436  echo "Vsem PRivet. from BuTaMuH" Myfile 
+  437  git status
+  438  git add  .
+  439  git status
+  440  git commit -m "my change"
+  441  git status
+  442  git log
+  443  git push origin master
+  444  mkdir max
+  445  clear
+  446  mkdir max
+  447  cd max
+  448  mkdir courses
+  449  cd courses
+  450  touch test
+  451  ls
+  452  echo "Good day" > test
+  453  cat test
+  454  cp test ../test
+  455  cd ../
+  456  ls
+  457  mv test test_passed
+  458  ls
+  459  rm test_passed
+  460  rm courses
+  461  del courses
+  462  ls
+  463  cut courses
+  464  rm -r courses
+  465  ls
+  466  clear
+  467  cd ../
+  468  rm -r max
+  469  ls
+  470  rm best_file
+  471  ls
+  472  mkdir max
+  473  cd max
+  474  cd ../
+  475  rm -r max
+  476  clear
+  477  mkdir max
+  478  cd max
+  479  mkdir courses
+  480  cd courses
+  481  touch test
+  482  echo "Ruby! Ruby! Ruby!" > test
+  483  cat test
+  484  mv test test_passed
+  485  ls
+  486  cd ../
+  487  rm courses/test_passed
+  488  rm -r courses
+  489  ls
+  490  sudo dpkg-reconfigure console-setup
+  491  k;lm
+  492  export LANG=en_US.UTF-8
+  493  ls
+  494  lsd
+  495  bherheh
+  496  mkdir rrrr
+  497  cd rrrr/
+  498  ls
+  499  git init
+  500  git status
+  501  ls
+  502  cd homework/
+  503  cd github/
+  504  git status
+  505  git clone --help
+  506  git clone git@github.com:BuTaMuH1st/saltedge_courses_2019.git
+  507  git clone https://github.com/BuTaMuH1st/saltedge_courses_2019.git
+  508  ls
+  509  cd saltedge_courses_2019/
+  510  ls
+  511  git remote add main https://github.com/mtkachenk0/saltedge_courses_2019.git
+  512  git remote
+  513  git remote -v
+  514  git status
+  515  git branch 
+  516  ls
+  517  mkdir triboi
+  518  mkdir triboi\lesson2
+  519  cd triboi
+  520  ls
+  521  mkdir lesson2
+  522  ls
+  523  cd lesson2
+  524  touch index.html
+  525  ls
+  526  cd ./
+  527  cd ..
+  528  git add .
+  529  git status 
+  530  git commit -m "changes from Triboi"
+  531  git status 
+  532  git remote 
+  533  git remote -v
+
+  543  git push -u origin master
+  544  history
+vitamin@triboi:~/homework/github/saltedge_courses_2019$ 
+
