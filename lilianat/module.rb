@@ -1,11 +1,13 @@
 module SomeModule
-	module InnerModule
-		class MyClass
-			CONSTANT = 4
+	def bye!
+		puts "Bye-bye!"
+	end
 
-			def bye!
-				puts "Bye-bye!"
-			end
-		end
+	def hello!
+		puts "Hello!"
+	end
+
+	def middle
+		puts "Something here"
 	end
 end

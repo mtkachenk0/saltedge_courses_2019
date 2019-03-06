@@ -2,8 +2,8 @@ require 'pry'
 require_relative 'module'
 
 class TestClass
-	include SomeModule::InnerModule
-
+	extend SomeModule
+	
 	def hello
 		puts "Hello!"
 	end
