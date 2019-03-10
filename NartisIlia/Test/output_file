@@ -1,0 +1,6 @@
+{"Vasilii"=>"Pupkin", "Nikolai"=>"Golubkin", "Sergey"=>"Kolokotsev", "Valerii"=>"Kartoskin", "Ivan"=>"Orlov", "Senea"=>"Voronkov"}
+{"Vasilii"=>"Golubkin", "Nikolai"=>"Kolokotsev", "Sergey"=>"Kartoskin", "Valerii"=>"Orlov", "Ivan"=>"Voronkov", "Senea"=>"Pupkin"}
+{"Vasilii"=>"Kolokotsev", "Nikolai"=>"Kartoskin", "Sergey"=>"Orlov", "Valerii"=>"Voronkov", "Ivan"=>"Pupkin", "Senea"=>"Golubkin"}
+{"Vasilii"=>"Kartoskin", "Nikolai"=>"Orlov", "Sergey"=>"Voronkov", "Valerii"=>"Pupkin", "Ivan"=>"Golubkin", "Senea"=>"Kolokotsev"}
+{"Vasilii"=>"Orlov", "Nikolai"=>"Voronkov", "Sergey"=>"Pupkin", "Valerii"=>"Golubkin", "Ivan"=>"Kolokotsev", "Senea"=>"Kartoskin"}
+{"Vasilii"=>"Voronkov", "Nikolai"=>"Pupkin", "Sergey"=>"Golubkin", "Valerii"=>"Kolokotsev", "Ivan"=>"Kartoskin", "Senea"=>"Orlov"}

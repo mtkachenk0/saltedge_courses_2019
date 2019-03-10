@@ -4,9 +4,10 @@ include BordComp
 
 class Avto
    MATERIAL="Steel"
-    
-    def eng_coff
-       
+    def write
+        "hello"
+        end       
+    def eng_coff     
         if @car_brand.include?("Alfa Romeo") && @type_eng == "Disel"
         ((@weight.to_f)/1230)/2  
             elsif @car_brand.include?("Alfa Romeo") && @type_eng == "Benzin"
