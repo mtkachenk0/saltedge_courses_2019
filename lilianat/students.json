@@ -1,0 +1,82 @@
+{
+  "students": {
+    "student": [  
+      {
+        "first_name": "Liliana",
+        "last_name": "Galkin"
+      },
+      { 
+        "first_name": "Valeria",
+        "last_name": "Bega"
+      },
+      { 
+        "first_name": "Maxim",
+        "last_name": "Tkachenko"
+      },
+      { 
+        "first_name": "Vadim",
+        "last_name": "Morozov"
+      },
+      { 
+        "first_name": "Dima",
+        "last_name": "Povolocico"
+      },
+      { 
+        "first_name": "Dmitry",
+        "last_name": "Luchita"
+      },
+      { 
+        "first_name": "Alex",
+        "last_name": "Mereuta"
+      },
+      { 
+        "first_name": "Serghei",
+        "last_name": "Teliucov"
+      },
+      { 
+        "first_name": "Vladimir",
+        "last_name": "Pintea"
+      },
+      { 
+        "first_name": "Ilya",
+        "last_name": "Nartysh"
+      },
+      { 
+        "first_name": "Evgheny",
+        "last_name": "Mocan"
+      },
+      { 
+        "first_name": "Oleg",
+        "last_name": "Connicov"
+      },
+      { 
+        "first_name": "Vitaly",
+        "last_name": "Triboi"
+      },
+      { 
+        "first_name": "Daria",
+        "last_name": "Nikitenko"
+      },
+      { 
+        "first_name": "Alexandra",
+        "last_name": "Jeleascova"
+      },
+      { 
+        "first_name": "Ana-Maria",
+        "last_name": "Serdiuc"
+      },
+      { 
+        "first_name": "Stanislav",
+        "last_name": "Spatari"
+      },
+      { 
+        "first_name": "Natalia",
+        "last_name": "Macarova"
+      },
+      { 
+        "first_name": "Eduard",
+        "last_name": "Macarov"
+      }
+    ]
+  }
+}

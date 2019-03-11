@@ -33,22 +33,21 @@ end
 Учтите вариант ошибки – пользователь вводит отрицательное число.
 =end
 
-Inf = Float::INFINITY
-newbie = (0..2).to_a
-middle = (3..10).to_a
-senior = (11..20).to_a
-old crone = (20..Inf)
 
-bonus = { 
-	newbie => "0%",
-	middle => "10%",
-	senior => "20%",
-	old crone => "25%"
-    }
 puts "Enter your work experience:"
-years = gets.chomp
-unless years >= 0 print "Please enter a positive number"
+years = gets.chomp.to_i
+print "Please enter a positive number" if years < 0
 
+if years <= 2
+	print "You're too young to have a bonus"
+elsif years in 3..10
+	print "You should have a 10%/ bonus"
+elsif years in 11..20
+	print "You should have a 20%/ bonus"
+else 
+	print "You should have a 25%/ bonus"
+end
+	
 
 
 
