@@ -1,0 +1,14 @@
+require_relative 'second_err'
+
+class User
+	include Validators 
+	def initialize(name, age, pswd)
+		@name = name
+		@age = age
+		@pswd = pswd
+	end
+
+	def mature?
+		@age >= 18
+	end
+end

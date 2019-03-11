@@ -1,0 +1,11 @@
+module Error
+	module Client
+		 class InvalidPaswd < StandardError
+
+		 end
+
+		class InvalidName < StandardError
+
+		end
+	end
+end

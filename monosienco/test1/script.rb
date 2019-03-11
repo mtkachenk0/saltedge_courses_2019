@@ -7,7 +7,7 @@ students = JSON.parse(json)
 firstnames = []
 lastnames = []
 
-students.each  do |student| 
+students.each do |student| 
 	firstnames.push(student["name"])
 	lastnames.push(student['lastname'])
 end
@@ -15,8 +15,10 @@ end
 pairs = []
 
 firstnames.each do |first_name|
-	lastnames.each do |last_name|
-		pairs.push({'first_name' => first_name, 'last_name' => last_name})
+	lastnames.each do |last_name|		
+		if (firstnames.index(first_name) != lastnames.index(last_name))
+			pairs.push({'first_name' => first_name, 'last_name' => last_name})
+		end
 	end
 end
 

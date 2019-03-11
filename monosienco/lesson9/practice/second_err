@@ -1,0 +1,12 @@
+require_relative 'modules'
+module Validators
+	def validate_name!
+		return if @name.lenght > 0 
+		raise Error::Client::InvalidName.new
+	end
+
+	def validate_paswd(pswd)
+		return if @pswd == pswd
+		raise Error::Client::Invalidname.new("Pasword is wrong!")
+	end
+end
