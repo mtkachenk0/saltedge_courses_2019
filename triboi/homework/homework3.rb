@@ -14,13 +14,13 @@ puts (28.modulo(6)*4.7).floor
 #     String
 
 #    "Brand new bicycle\r\n" - remove trailing special characters
-puts "Brand new bicicle\n\r".chomp
+puts "Brand new bicycle\n\r".chomp
 #    "Brand new bicycle" - using indexes extract "new"
-puts "Brand new bicicle"[6..8]
+puts "Brand new bicycle"[6..8]
 #    "Brand new bicycle" - delete last word
-puts "Brand new bicicle"[0..9]
+puts "Brand new bicycle"[0..9]
 #    "Brand new bicycle" - check if the sctring's last word is bicycle
-puts "Brand new biccicle".end_with?"biccicle"
+puts "Brand new bicycle".end_with?("bicycle")
 #    "Brand new bicycle" - find out what index the letter "w" has
 puts "Brand new bicycle".index("w")
 #    "I thought I knew everything before that night" - split the string in 3 parts

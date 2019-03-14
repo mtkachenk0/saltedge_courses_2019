@@ -37,7 +37,6 @@ end
 
 class Man < Human
   GENDER = "man"   #константа
-
   def initialize(race, *args)
     @race = race
     super(*args)

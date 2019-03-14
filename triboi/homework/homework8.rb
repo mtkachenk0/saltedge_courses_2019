@@ -1,5 +1,5 @@
 class BortPC
-  attr_accesor :model, :motor, :fuel, :copacity, :weigth
+  attr_accesor :model, :motor, :fuel, :copacity, :weigth, :hod
 
   def initialize(model, motor, weigth, copacity, fuel) #
     @type_fuel  = self.class::TYPEFUEL
@@ -10,29 +10,27 @@ class BortPC
     @weigth     = weigth
   end
 
-def m_fuellevel
-#  fuel / copacity
-return p "hi"
-end
-
-def m_rashod
-  rashod = weigth * motor * koef
-end
-
-def togas
-  togas1 = copacity / rashod
-end
-
+  def m_fuellevel
+    #  fuel / copacity
+    return "kuku"
+  end
+  def distance
+    dist = copacity / hod
+  end
+  def rashod
+      hod = weigth * motor * koef
+      @hod=hod
+  end
 end
 class Petrol < BortPC
-  TYPEFUEL = "Petrol"
-  def kkoef
-    koef = weigth / 1230
-  end
+    TYPEFUEL = "Petrol"
+    def koef  #name same ???
+      koef = weigth / 1230
+    end
 end
 class Disel < BortPC
   TYPEFUEL = "Disel"
-  def kkoef
+  def koef  #names same??
     koef = weigth / 700
   end
 end
@@ -42,4 +40,4 @@ end
  alifa = Petrol.new("Alifa Romeo gulia",2.9, 1580, 58, 56)
 p bmw5.class::TYPEFUEL
 
-p bmw5.fuellevel
+p bmw5.m_fuellevel
