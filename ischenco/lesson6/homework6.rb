@@ -1,80 +1,39 @@
-a=(17..255).to_a
-puts "Our array"
-print a
-puts " "
-puts "Max element of array is:"+(a.max).to_s
-puts " "
-puts "Index of max element of array is:" + (a.rindex { |x| x == a.max }).to_s
-puts " "
-puts "All numbers of array which are devided by 2 or 3"   
- a.each do|i|
-        if i % 2 == 0 || i % 3 == 0
-        print i
-        print " "
-        end
-    end
-puts " "
-puts "All numbers which are not multiple by 6" 
- a.each do|i|
-        if i % 6 != 0
-        print i
-        print " "
-        end
-    end
-puts " "
-puts "All numbers of array which are devided by 2 or 3 - v2"   
- a.select do|i|
-        i % 2 == 0 || i % 3 == 0
-        print i
-        print " "
-        
-    end
-puts " "
-puts "All numbers which are not multiple by 6 - v2" 
- a.select do|i|
-        i % 6 != 0
-        print i
-        print " "
-   
- end
-puts " "
-puts "If our array contains 16 or 26 "
-if a.detect  {|i| i == 16 || i == 26 }  
-puts "Yes"
-else puts"No"
+#Home work
+puts "Create an array of numbers"
+numbers=[3,7,24,19,41,6,8,16,63,5]
+puts numbers
+
+puts "1.1. Display the index of the maximum number puts"
+puts "Max index = " + (numbers.index(numbers.max)).to_s
+
+puts "1.2. Display all numbers which are divided by 2 or 3 - V1"
+numbers.each do |num|
+  if num%2==0||num%3==0
+     puts num
+  end
 end
+puts "V2"
+numbers.each {|num| puts num if num%2 == 0 || num%3 == 0}
 
-
-mus=[{ title: 'Mad World', artist: 'Gary Jules',year: 1998 },{ title: 'California Gurls', artist: 'Katy Perry', year: 2000 },{ title: 'Needle in the Hay', artist: 'Elliott Smith', year: 1997 }, { title: 'Happy', artist: 'Pharrell Williams', year: 2017 },{ title: 'Some song', artist: 'Pharrell Williams', year: 2018 }]
-
-
-puts mus
-puts" Titles of songs"
-mus.each do |s|
- puts s[:title]
+puts "1.3. Display all numbers which are not multiple of 6 -  V1"
+numbers.each do |num|
+  if num%6!=0
+       puts num
+  end
 end
+puts "V2"
+numbers.each {|num| puts num if num%6!=0}
 
-puts "Songs from 90"
-
-mus.each do |y|
-t= y[:year].to_i
-if t>1989 && t<2000
-puts t
+puts "1.4. Find out if your array contains number 16 or 26.-V1"
+flag = false
+puts "array contains number 16 or 26"
+numbers.each do |num|
+  if num==16||num==26
+    flag = true
+    break
+  end
 end
-end
+puts flag
 
-puts "Artists that have more then one song"
-
-b=Array.new
-mus.each do |a|
-b.push(a[:artist])
-end
-puts b[0]
-
-
-
-
-
-
-
-
+puts "V2"
+puts numbers.select {|num| [16,26].include?num}.any?
