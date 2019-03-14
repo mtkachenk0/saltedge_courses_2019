@@ -29,6 +29,8 @@ end
 a.include?(16)
 a.include?(26)
 
+# arr.select{|a| [16, 26].include?a}.any?
+
 # 2. Create an array of hashes
 
 new_array = [
@@ -57,7 +59,21 @@ end
 
 # 2.3 Display artists names which have more then 1 song
 
+# group_by {|h| hash(:artist)}
+b = {}
+
+new_array.each do |hash|
+	if b.keys.include? hash[:artist]
+		b[hash[:artist]] += 1
+	else 
+		b[hash[:artist]] = 1
+	end
+end
+
+puts b(если  =  2)
+
 # 2. 4 Display the oldest song
+# use sory by
 b = []
 new_array.each do |x|
 	b.push(x[:year])
