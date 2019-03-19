@@ -18,7 +18,7 @@ puts top_news
 #write images to folder 
 top_news.each_pair do |k,v|
  file=RestClient.get(v)
- File.write('/home/william/courses/saltedge_courses_2019/NartisIlia/Lesson12/'+k,file)
+ File.write('/home/william/courses/saltedge_courses_2019/NartisIlia/Lesson12/'+k+'.jpg',file)
 end
 
 
