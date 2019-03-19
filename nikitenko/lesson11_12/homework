@@ -1,0 +1,6 @@
+require 'pry'
+require 'rest-client'
+require 'nokogiri'
+
+data=RestClient.get('https://point.md/ru')
+html=Nokogiri::HTML(data)
