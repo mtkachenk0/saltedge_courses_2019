@@ -31,7 +31,26 @@ class Bortovoi_comp
 
 	def status
 		current_volume = rand(1..bak_volume)
-		puts "I'm "
+		puts "I'm #{self.class::MARK} #{@model}"
+		puts "Current volume of petrol: #{current_volume}"
+		puts "Average consumption: #{average_consumption} l/100km"
+		puts "Fuel lvl: #{fuel_lvl(current_volume)}"
+		puts "Distance remained: #{distance(current_volume)} km"
+	end
+end
 
+class BMWBortovoi_comp < Bortovoi_comp
+	MARK = "BMW"
+end
+
+class AlfaRomeoBortovoi_comp < Bortovoi_comp
+	MARK = "Alfa Romeo"
+	def coefficient 
+		devider = engine_petrol == :diesel ? 2 : 1.5
+		super/divider
+	end
+end
+
+	
 
 			
