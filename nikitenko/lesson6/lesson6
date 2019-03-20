@@ -1,0 +1,103 @@
+=begin
+3.times do
+  puts "Daria"
+end
+
+3.times do |index|
+  puts "Daria #{index}"
+end
+
+number=1
+while number<10
+  puts number
+  number+=1
+end
+
+n=1
+while n<10
+  puts n
+  break if n==5
+  n+=1
+end
+
+arr1=(1..10).to_a
+arr1.each do |n|
+  puts n
+end
+
+h={"a"=>2,"b"=>2}
+h.each do |k,v|
+  puts k
+end
+=end
+
+h={"a"=>2,"b"=>2}
+h.each_pair do |pair|
+  p pair
+end
+
+
+hash.each_key do |k|
+  puts k
+end
+
+arr1=["a","b","c"]
+arr1.map do |str|
+  str+"lala"
+end
+
+hash={"a"=>1,"b"=>2}
+hash.map do |k,v|
+  v+=10
+  [k,v]
+end.to_h
+
+arr.map! do |var|
+  var.upcase
+end
+
+arr.map { |var| var.upcase }
+
+arr.select do |var|
+arr.include?("a")
+end
+
+hash.select { |k,v| v>=3 }
+
+arr.reject { |var| var.include?("a")}
+
+arr=["ana","bob","dalsy"]
+arr.index("bob")
+
+arr.detect { |var| var.include?("a") }
+
+hash.detect {|k,v| v>2 }
+
+arr.index("bob")
+
+arr.all? { |elem| elem<10 }
+
+arr.none? { |elem| elem>10 }
+
+hash.all? { |k,v| v.nil? }
+
+arr.map do |el|
+el+=2
+end.select do |el| 
+el.odd?
+end.all? do |el|
+el%3==0
+end
+
+arr.map {|el| el+=2}.select {|el| el.odd?}.all? {|el| el%3==0}
+
+
+
+
+
+
+
+
+
+
+
