@@ -1,12 +1,4 @@
 module BortComputer
-  def initialize(name, weight, engine_volume, engine_petrol, tank_volume)
-    @name = name
-    @weight = weight
-    @engine_volume = engine_volume
-    @engine_petrol = engine_petrol
-    @tank_volume = tank_volume
-  end
-
   def average_consumption
     ((@weight * @engine_volume * koeff) / 1000).ceil(2)
   end
