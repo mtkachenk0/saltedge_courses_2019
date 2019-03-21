@@ -1,3 +1,4 @@
+
 puts -123.odd?
 puts 6893.next
 puts 0.pred
