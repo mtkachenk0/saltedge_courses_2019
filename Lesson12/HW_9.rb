@@ -5,13 +5,12 @@ require 'nokogiri'
 data = RestClient.get('https://point.md/ru').body
 html = Nokogiri::HTML(data)
 
-big_image=html.css("div[class='middle-block'] img[src*='https://i.simpalsmedia.com/point.md/news/370x220']")
-little_image=html.css("div[class='middle-block'] img[src*='https://i.simpalsmedia.com/point.md/news/160x90']")
+image=html.css("div[class='middle-block'] img[src*='https://i.simpalsmedia.com/point.md/news/']")[0..9]
 
-#Get first 10 images
-top_news={big_image[0]['alt']=>big_image[0]['src']}
-i=0
-little_image.each{|v|  top_news[v['alt']]=v['src'] if (i=i+1)<10}
+
+top_news={}
+
+image.each{|v|  top_news[v['alt']]=v['src']}
 
 puts top_news
 
