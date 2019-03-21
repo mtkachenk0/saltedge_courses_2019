@@ -1,5 +1,0 @@
-module hello_module
-	def hello
-		return 'Hello Max'
-	end
-end

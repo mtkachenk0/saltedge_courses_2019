@@ -1,9 +1,0 @@
-class BMWBortComp < BortComp
-	MARK = 'BMW'
-end
-
-require 'pry'
-
-bmw = BMWBortComp.new('bmw e3', 1510, 3.2, :diesel, 60)
-binding.pry
-puts 1
