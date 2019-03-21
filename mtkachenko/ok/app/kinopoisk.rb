@@ -2,12 +2,8 @@ require 'nokogiri'
 require 'watir'
 require 'pry'
 
-class KinopoiskParser
+class Kinopoisk
   BASE_URL = "https://kinopoisk.ru/"
-  attr_reader :browser
-  def initialize
-    @browser = Watir::Browser.new :chrome
-  end
 
   def run!
     browser.goto("https://kinopoisk.ru")
@@ -39,8 +35,8 @@ class KinopoiskParser
   def percent_html
     Nokogiri::HTML.fragment(browser.div(class: "await_rate").html)
   end
+
+  def browser
+    @browser ||= Watir::Browser.new :chrome
+  end
 end
-
-
-parser = KinopoiskParser.new
-parser.run!
