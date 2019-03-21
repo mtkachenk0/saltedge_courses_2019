@@ -3,8 +3,6 @@ require 'rest-client'
 require 'nokogiri'
 require 'watir'
 
-
-#Watir::Browser.new :chrome
 class Kinopoisk
 
 	def initialize(name_film)
@@ -20,7 +18,6 @@ class Kinopoisk
  	end
 
  	def info
-        require 'watir'
 	 	@browser.text_field(name: "kp_query").send_keys @name_film, :enter
 		@browser.div(class: "info").a.click
 		
@@ -32,20 +29,9 @@ class Kinopoisk
 
 end
 
-
-
-
 film_1=Kinopoisk.new("Зеленая миля")
 film_2=Kinopoisk.new("Форрест Гамп")
 film_3=Kinopoisk.new("Побег из Шоушенка")
 
-
-
-
-
 binding.pry
 1
-
-
-
-
