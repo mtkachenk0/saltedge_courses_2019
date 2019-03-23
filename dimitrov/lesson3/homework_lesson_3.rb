@@ -35,5 +35,5 @@ puts "Brand new bicycle".index('w')
 puts "I thought I knew everything before that night".partition(/.everything/) 
 ## 6. `"I thought I knew everything before that night"` - split the string in 3 parts to get the following result: `"I thought I new "`, `"everything"`, `"before that night"`
 
-puts "Final result from Float/Integer part is: #{case1}, #{case2}, #{case3}, #{case4}, #{case5}!"
+puts "Final results from Float/Integer part are: #{case1}, #{case2}, #{case3}, #{case4}, #{case5}!"
 ## 7. `"Final result from Float/Integer part is: "` - using interpolation place the sum of all results from first 5 examples to the end of string.
