@@ -1,4 +1,6 @@
 ## Float/Integer
+
+
 puts case1 = -123.odd? ##1 `-123` - find out if it's odd or even?
 
 puts case2 = 6893.next ##2 `6893` - show what next number will be
