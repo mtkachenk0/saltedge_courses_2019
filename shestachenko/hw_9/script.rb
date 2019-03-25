@@ -24,3 +24,4 @@ end
 file = File.new("script_names.json", "w")
 file.print names_new.to_json
 file.close
+
