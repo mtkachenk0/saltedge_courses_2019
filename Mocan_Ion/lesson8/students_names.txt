@@ -1,8 +1,0 @@
-{
-  "John": "Travolta",
-  "Clint": "Eastwood",
-  "Sean": "Connery",
-  "Gil": "McLean",
-  "Stephen": "O'reilly",
-  "Sarah": "Connor"
-}
